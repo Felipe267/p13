@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .links {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 7.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        article h2 {
+            color: #333;
+        }
+
+        article p {
+            color: #666;
+        }
+
+        .titulo{
+            color: #23232e;
+            text-align: center;
+            width: 150px;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 29px;
+            margin-bottom: 50px;
+            padding: 60px 0 0 0;
+        }
+
+        footer {
+            background-color: #23232e;
+            color: #fff;
+            text-align: center;
+            padding: 3px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .logo {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #23232e;
+        padding: 13px 20px;
+        }
+
+        .menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        }
+
+        .btn-bar {
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: 0.3s;
+        }
+
+        .menu-btn.active .btn-bar:nth-child(2) {
+        opacity: 0;
+        }
+
+        .menu-btn.active .btn-bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+        }
+
+        .menu-btn.active .btn-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+        }
+
+        .menu {
+        display: none;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        }
+
+        .menu.active {
+        display: block;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 50%;
+        background-color: #23232e;
+        z-index: 1;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 10px 10px;
+        }
+
+        .menu li {
+        padding: 10px;
+        }
+
+        .menu li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+        .menu-btn {
+            display: flex;
+        }
+        }
+
+        .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #23232e;
+        z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+          <div class="menu-btn">
+            <span class="btn-bar"></span>
+            <span class="btn-bar"></span>
+            <span class="btn-bar"></span>
+          </div>
+          <div class="logo">
+            <a href="index.html">ETEC</a>
+          </div>
+          <ul class="menu">
+            <li><h4><a href="index.html">Home</a></h4></li>
+            <li><h4><a href="integrantes.html">Integrantes</a></h4></li>
+            <li><h4><a href="contato.html">Contato</a></h4></li>
+            <li><h4><a href="projeto.html">Projeto</a></h4></li>
+          </ul>
+        </div>
+      </header>
+
+    <main class="container">
+        
+        <div class="titulo">
+            <h3>Projeto:</h3>
+        </div>
+
+        <article>
+            <h2>Vazão</h2>
+            <p>50 mil habitantes</p>
+            <p>8 milhões de litros por dia</p>
+            <p>92,6 litros por segundo</p>
+        </article>
+
+        <article>
+            <h2>Gradeamento Grosseiro</h2>
+            <p>Altura: 0,33336 metros</p>
+            <p>Largura da barra: 32 milímetro</p>
+            <p>Comprimento: 0,33336 metros</p>
+            <p>Velocidade do fluído: 0,8 metros por segundo</p>
+            <p>Ângulo: 60º graus</p>
+            <p>Espaçamento entre as barras: 16 milímetros</p>
+            <p>Limpeza: Manual</p>
+        </article>
+
+        <article>
+            <h2>Gradeamento Médio</h2>
+            <p>Altura: 0,33336 metros</p>
+            <p>Largura da barra: 8 milímetro</p>
+            <p>Comprimento: 0,33336 metros</p>
+            <p>Velocidade do fluído: 0,8 metros por segundo</p>
+            <p>Ângulo: 60º graus</p>
+            <p>Submerso: 0,28869 metros</p>
+            <p>Espaçamento entre as barras: 40 milímetros</p>
+            <p>Limpeza: Manual</p>
+        </article>
+
+        <article>
+            <h2>Elevatória (Média)</h2>
+            <p>Capacidade: 50 a 500 litros por segundo</p>
+            <p>Bomba: Recalque</p>
+            <p>Velocidade: 0,8 metros por segundo</p>
+        </article>
+
+        <article>
+            <h2>Tubos</h2>
+            <!-- <p>Diâmetro: 50 a 1200 milímetro</p>
+            <p>Comprimento: 3, 6 e 7 metros</p> -->
+            <p>Diâmetro: 3,12</p>
+            <p>Área: 7,6454 metros²</p>
+            <p>Vazão: 6,11632 metros³ por segundo</p>
+            <p>classes: K-9, K-7 e 1MPa</p>
+        </article>
+        
+        <article>
+            <h2>Caixa de Areia</h2>
+            <p>Comprimento: 3 metros.</p>
+            <p>Largura: 2 metros.</p>
+            <p>Altura: 1 metros.</p>
+            <p>Taxa de escoamento: 3,05816 metros por segundo.</p>
+        </article>
+
+        <article>
+            <h2>Tratamento Biológico:</h2>
+            <p>Lodo ativado</p>
+        </article>
+        
+        <article>
+            <h2>Decantador primário</h2>
+            <p>Comprimento: Cerca de 10 a 15 metros.</p>
+            <p>Largura: Aproximadamente 6 a 8 metros.</p>
+            <p>Profundidade: Varia de 3 a 5 metros.</p>
+        </article>
+
+        <article>
+            <h2>Decantador Secundario</h2>
+            <p></p>
+        </article>
+
+
+        <article>
+            <h2>Tratamento do Lodo:</h2>
+            <p> O lodo resultante do processo de tratamento é separado, espessado, desidratado e processado para reduzir o volume e a umidade. Dependendo do tipo de lodo, ele pode ser usado em processos de compostagem, incineração ou descarte controlado.</p>
+        </article>
+        
+        <!-- <article>
+            Espessador de Lodo:
+
+            Dimensões variam conforme a capacidade da ETE e a taxa de produção de lodo.
+            Comprimento: Cerca de 5 a 10 metros.
+            Largura: Aproximadamente 3 a 5 metros.
+            Profundidade: Varia de 2 a 4 metros.
+            Taxa de escoamento: Geralmente em torno de 0,05 a 0,15 m³/m²/dia.
+            Digestor Anaeróbico (se aplicável):
+
+            Dimensões dependem da quantidade de lodo a ser tratado.
+            Comprimento: Cerca de 10 a 20 metros.
+            Largura: Aproximadamente 5 a 10 metros.
+            Altura: Varia de 3 a 6 metros.
+            Desidratação de Lodo:
+
+            As dimensões podem variar conforme a tecnologia de desidratação utilizada (centrífugas, prensas, etc.).
+            As unidades podem ter dimensões da ordem de 2 a 4 metros de comprimento, 1 a 2 metros de largura e 2 a 3 metros de altura.
+        </article> -->
+
+        <article>
+            <h2>Descarte ou Reúso:</h2>
+            <p> Após passar por todas as etapas de tratamento, o efluente tratado é geralmente descarregado em corpos d'água de acordo com regulamentações ambientais. Em algumas situações, o efluente tratado também pode ser reutilizado para fins não potáveis, como irrigação.</p>
+        </article>
+    
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 ETE. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+            const menuBtn = document.querySelector('.menu-btn');
+            const menu = document.querySelector('.menu');
+
+            menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

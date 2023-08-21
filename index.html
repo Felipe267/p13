@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estação de Tratamento de Esgoto e Efluentes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+article a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+    
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.cabeca{
+    text-align: center;
+    background: url(nnn.png);
+    background-size: cover;
+}
+
+.img-cabeca{
+    margin: 100px 0px 0px 0px; 
+    border: 7px solid white; 
+    border-radius: 20px; 
+    width: 350px; 
+    height: 250px;
+}
+
+h1{
+    color: white;
+    padding-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+article h2 {
+    color: #333;
+}
+
+article p {
+    color: #666;
+}
+
+footer {
+    background-color: #23232e;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    background-color: #FFF;
+    font-size: 17px;
+    padding: 0;
+}
+
+.hidden-content {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    img{
+        max-width: 300px;
+    }
+
+    div img{
+        width: 100%;
+    }
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #23232e;
+  padding: 13px 20px;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.btn-bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.menu-btn.active .btn-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active .btn-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.menu-btn.active .btn-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu.active {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 50%;
+  background-color: #23232e;
+  z-index: 1;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: flex;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #23232e;
+  z-index: 1000;
+}
+
+div img{
+    width: 700px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="navbar">
+              <div class="menu-btn">
+                <span class="btn-bar"></span>
+                <span class="btn-bar"></span>
+                <span class="btn-bar"></span>
+              </div>
+              <div class="logo">
+                <a class="link" href="index.html">ETEC</a>
+              </div>
+              <ul class="menu">
+                <li><h4><a class="link" href="index.html">Home</a></h4></li>
+                <li><h4><a class="link" href="integrantes.html">Integrantes</a></h4></li>
+                <li><h4><a class="link" href="contato.html">Contato</a></h4></li>
+                <li><h4><a class="link" href="projeto.html">Projeto</a></h4></li>
+              </ul>
+            </div>
+          </header>
+    </div>
+
+    <div class="cabeca">
+        <img src="bnt.jpg" alt="Blog Etec" class="img-cabeca">
+        <h1>Blog Etec</h1>
+    </div>
+    
+    <main class="container">
+        <!-- 1 -->
+        <article>
+            <h2>Planta do Projeto</h2>
+            <p>Em nossa pesquisa utilizamos uma planta disponibilizada no site da Sabesp:</p>
+            <div class="hidden-content">
+                <img src="ttt.png" alt="">
+                <p>Fonte <a href="https://www.sabesp.com.br/site/interna/Default.aspx?secaoId=49">Sabesp</a></p> 
+                <p>1 Gradeamento.</p>
+                <p>1.2 Grosseiro</p>
+                <p>1.3 Médio</p>
+                <p>2.Elevatoria</p>
+                <p>2.2 Tipo de bomba (Submersível ou Recalque)</p>
+                <p>3. Caixa de Areia</p>
+                <p>4. Decantador Primario</p>
+                <p>5. Decantador Secundario</p>
+                <p>6. Lodo</p>
+                <p>7. Tanque Final</p>
+            </div>
+            <button class="leiaMaisBtn">Leia mais</button>  
+        </article>
+        <!-- 2 -->
+        <article>
+            <h2>Estação de tratamento</h2>
+            <p>O nosso projeto se consiste em produzir uma estação de tratamento de esgoto (ETE) em uma cidade ficcional de 50 mil habitantes.</p>
+            <div class="hidden-content">
+                <p>Para iniciar o processo de construção de uma Estação de Tratamento, é crucial determinar a vazão correspondente a 50 mil indivíduos. Considerando que uma pessoa de classe alta consome em média 160 litros por dia, o consumo diário de 50 mil pessoas totaliza 8 milhões de litros. Portanto, a vazão para atender 50 mil pessoas diariamente equivale a 92,6 litros por segundo. <a href="https://docs.ufpr.br/~rtkishi.dhs/TH029/TH029_09_Tanqueseptico_Tabelas.pdf">(NBR – 7229/93)</a></p> 
+                <p>1 - Prevenir / Eliminar: Avaliação detalhada do processo identificando os diferentes 
+                    tipos de resíduos gerados e a possibilidade de não geração, reutilização e reciclagem;</p>
+                <p>2 - Minimizar / Reduzir: Melhoria da eficiência dos processos, aplicada sobre o 
+                    detalhamento da etapa anterior, evitando-se o desperdício e separando a parte possível de 
+                    reutilização; </p>
+                <p>3 - Reciclar / Recuperar: Separação e destinação de parte do resíduo, para ser 
+                    utilizado como matéria-prima em outro processo; </p>
+                <p>4 - Tratar: Os resíduos que, após as análises das etapas anteriores, ainda são gerados 
+                    e não podem ser reutilizados ou reciclados na forma em que se encontram, necessitam de 
+                    tratamento para a redução de volume, de riscos de contaminação, estabilização e então 
+                    destinação para reciclagem, se possível; </p>
+                <p>5 - Dispor de forma segura: Apenas os produtos que sobram após a aplicação dos 
+                    passos anteriores, é que necessitam ser destinados a locais para deposição, seguindo 
+                    orientações e procedimentos para que não venham a contaminar o meio ambiente.</p>
+            </div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
+        <!-- 3 -->
+        <article>
+            <h2>Gradeamento</h2>
+            <p>A primeira etapa da estação de tratamento é a partir da gradeação impedindo que dejeitos com uma expessura elavada sejam intersectados pela grade.</p>
+            <div class="hidden-content">
+                <p>Na nossa Estação de Tratamento de Efluentes (ETE), empregamos dois tipos de gradeamento: um com aberturas largas e outro com aberturas de tamanho intermediário. Ambos são essenciais para garantir que a velocidade da água se mantenha entre 0,6 metros por segundo e 1 metro por segundo.</p>
+                <img src="Gradeamento.webp" alt="">
+                <p>Fonte <a href="https://repositorio.utfpr.edu.br/jspui/bitstream/1/587/1/CT_PPGEC_M_Barros%2C%20H%C3%A9lio%20Botto%20de_2013.pdf">Sistema Auxiliar a Projetos de Estações de Tratamento de Esgotos Compactas - SAPETEC</a></p>
+                <p>Utilizando a fórmula de cálculo (Q = A * V), onde Q representa a vazão, A é a área e V é a velocidade, é viável determinar que a área necessária é de 1,1575 m² (0,0926 m³/s = A * 0,8). Contudo, é essencial fazer um ajuste de 50% na grelha para permitir a passagem da água, o que significa que a área necessária se torna 0,2315 m² (0,11575 / 0,5).</p>
+                <p>Por último, é necessário realizar o ajuste da área e das barras. O espaçamento entre as barras é de 8 cm e a espessura das barras é de 8 mm. Primeiro, consideramos metade do espaçamento, que é igual a 0,04 m, e aplicamos o mesmo valor para a espessura das barras, resultando em 0,008 m. Somamos esses dois valores e elevamos ao quadrado para obter a área total, que resulta em 0,023 m² ou 23 * 10^-4 m². Em seguida, dividimos esse valor pela área pela qual a água passará. Aplicando o mesmo procedimento, encontramos um valor de 16 * 10^-4. Dividindo esses dois valores, obtemos 1,44 m.</p>
+                <p>Multiplicando a área total por 1,44 para incorporar o ajuste das barras juntamente com a passagem da água, obtemos um valor de 0,33336 m². Ao aplicar a operação de raiz, podemos determinar que as dimensões de altura e largura do gradeamento serão de 0,57737 metros, e vale ressaltar que parte do gradeamneto fica submerso no nosso projeto ele ficara a metade da altura total ou seja 0,28869 metros.<a href="https://salatecnica.com.br/cursos/Arquivos/NBRS/NBR%2012208%20-%201992%20-%20Projeto%20de%20Esta%C3%A7%C3%B5es%20Elevat%C3%B3rias%20de%20Esgoto%20Sanit%C3%A1rio.pdf">(NBR 12208)</a></p>
+            </div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
+        <!-- 4 -->
+        <article>
+            <h2>Elevatoria</h2>
+            <p>Sua principal função é elevar o esgoto ou águas residuais de áreas mais baixas para áreas mais altas, onde o esgoto possa continuar fluindo por gravidade ou ser direcionado para o tratamento adequado.</p>
+            <div class="hidden-content">
+                <p>A vazão estimada para o nosso projeto excede a capacidade da estação elevatória de pequeno porte, a qual suporta somente 50 litros por segundo.</p>
+                <img src="eleva.webp" alt="">
+                <p>Fonte: <a href="https://pt.slideshare.net/mackenzista2/aula-captao-adutorasrev">mackenzista</a></p> 
+                <p> Em vez de optarmos por uma estação elevatória de pequenas dimensões, iremos selecionar uma estação de médio porte, capaz de acomodar vazões que variam de 50 a 500 litros por segundo. Além disso, a estação elevatória de médio porte terá uma profundidade de 6 metros e utilizaremos Uma bomba de recalque é preferível em vez de uma bomba submersa, pois a bomba de recalque é capaz de lidar com velocidades de fluidos mais elevadas durante o processo de sucção. Isso a torna mais adequada para essa aplicação. <a href="https://salatecnica.com.br/cursos/Arquivos/NBRS/NBR%2012208%20-%201992%20-%20Projeto%20de%20Esta%C3%A7%C3%B5es%20Elevat%C3%B3rias%20de%20Esgoto%20Sanit%C3%A1rio.pdf">(NBR 12208)</a></p>
+                <h3>Documentos Complementares:</h3>
+                <p>NBR 5410 - Instalações elétricas de baixa tensão - Procedimento. <br>
+                NBR 9648 - Estudo de concepção de esgoto sanitário - Procedimento. <br>
+                NBR 9649 - Projeto de redes coletoras de esgoto sanitário - Procedimento. <br>
+                NBR 12207 - Projeto de interceptores de esgoto sanitário - Procedimento.</p>
+            </div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
+        <!-- 5 -->
+        <article>
+            <h2>Caixa de Areia</h2>
+            <p>A caixa de areia retira partículas pesadas, como areia, do esgoto por sedimentação, prevenindo danos aos processos subsequentes de tratamento.</p>
+            <div class="hidden-content">
+                <img src="tubo.webp" alt="">
+                <p>Fonte: <a href="https://pt.slideshare.net/mackenzista2/aula-captao-adutorasrev">mackenzista</a></p>
+            </div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
+        <!-- 6 -->
+        <article>
+            <h2>Decantador Primario</h2>
+            <p>O decantador primário separa sólidos e materiais flutuantes no tratamento de esgoto por meio de sedimentação e flotação, melhorando a eficiência do processo de tratamento.</p>
+            <div class="hidden-content">
+            </div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
+        <!-- 7 -->
+        <article>
+            <h2>Decantador Secundario</h2>
+            <p>O decantador secundário remove microrganismos e partículas finas do esgoto tratado, permitindo que eles sedimentem antes de o efluente ser liberado, melhorando a qualidade da água final.</p>
+            <div class="hidden-content"></div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
+        <!-- 8 -->
+        <article>
+            <h2>Lodo</h2>
+            <p>Conteudo</p>
+            <div class="hidden-content"></div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 ETE. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const leiaMaisBtns = document.querySelectorAll('.leiaMaisBtn');
+
+            leiaMaisBtns.forEach(function(btn) {
+                const hiddenContent = btn.previousElementSibling;
+
+                btn.addEventListener('click', function() {
+                    if (hiddenContent.style.display === 'none') {
+                        hiddenContent.style.display = 'block';
+                        btn.textContent = 'Leia menos';
+                    } else {
+                        hiddenContent.style.display = 'none';
+                        btn.textContent = 'Leia mais';
+                    }
+                });
+            });
+        });
+
+            const menuBtn = document.querySelector('.menu-btn');
+            const menu = document.querySelector('.menu');
+
+            menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+
+    </script>
+</body>
+</html>

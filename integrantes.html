@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes</title>
+<head>
+<style>
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container {
+    width: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    border-radius: 8px;
+}
+
+.t1{
+    color: white;
+    text-align: center;
+    background-color: #23232e;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 29px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #23232e;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+article h2 {
+    color: #333;
+}
+
+article p {
+    color: #666;
+}
+
+/* Exemplo de media query para dispositivos com largura máxima de 600px */
+@media (max-width: 600px) {
+  .carousel-container {
+    width: 100%; /* Preencher a largura da tela */
+  }
+
+  .carousel img {
+    width: 400px; /* Preencher a largura da área do carrossel */
+    height: auto; /* Altura automática para manter a proporção */
+    margin: 0;
+  }
+}
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .logo {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #23232e;
+  padding: 13px 20px;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.btn-bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.menu-btn.active .btn-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active .btn-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.menu-btn.active .btn-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu.active {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 50%;
+  background-color: #23232e;
+  z-index: 1;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: flex;
+  }
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #23232e;
+  z-index: 1000;
+}
+
+</style>
+</head>
+<body>
+
+    <div>
+        <header class="header">
+            <div class="navbar">
+              <div class="menu-btn">
+                <span class="btn-bar"></span>
+                <span class="btn-bar"></span>
+                <span class="btn-bar"></span>
+              </div>
+              <div class="logo">
+                <a href="index.html">ETEC</a>
+              </div>
+              <ul class="menu">
+                <li><h4><a href="index.html">Home</a></h4></li>
+                <li><h4><a href="integrantes.html">Integrantes</a></h4></li>
+                <li><h4><a href="contato.html">Contato</a></h4></li>
+                <li><h4><a href="projeto.html">Projeto</a></h4></li>
+              </ul>
+            </div>
+          </header>
+    </div>
+
+    <main class="container">
+
+        
+        
+        <div class="carousel-container">
+        <div class="carousel">
+            <img src="Aurélio.jpg" alt="Imagem 1">
+            <img src="Daniel.jpg" alt="Imagem 2">
+            <img src="Felipe.png" alt="Imagem 3">
+            <img src="Thiago.jpg" alt="Imagem 3">
+        </div>
+        </div>
+
+        <div class="t1">
+            Integrantes:
+        </div>
+
+        <article>
+            <h2>Aurélio</h2>
+            <p>Sobre o integrante Aurélio</p>
+        </article>
+
+        <article>
+            <h2>Daniel</h2>
+            <p>Sobre o integrante Daniel</p>
+        </article>
+
+        <article>
+            <h2>Felipe Antônio</h2>
+            <p>Sobre o integrante Felipe Antônio</p>
+        </article>
+
+        <article>
+            <h2>Thiago</h2>
+            <p>Sobre o integrante Thiago</p>
+        </article>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ETE. Todos os direitos reservados.</p>
+    </footer>  
+<script>
+  const carousel = document.querySelector('.carousel');
+  let currentIndex = 0;
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % carousel.children.length;
+    updateCarousel();
+  }
+
+  function updateCarousel() {
+    const offset = -currentIndex * 400; // Width of each slide
+    carousel.style.transform = `translateX(${offset}px)`;
+  }
+
+  setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+//   menu hamburguer
+
+            const menuBtn = document.querySelector('.menu-btn');
+            const menu = document.querySelector('.menu');
+
+            menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+</script>
+</body>
+</html>
