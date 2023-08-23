@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body{
@@ -15,49 +17,19 @@
             background-image: linear-gradient(to bottom, rgba(164, 10, 164, 0.914), rgb(139, 47, 219) ,darkblue);
             background-repeat: no-repeat;
             background-attachment: fixed;
+            font-family: Arial, sans-serif;
         }
 
         label{
             padding: 10px;
         }
 
-        .container {
-            max-width: 800px;
-        }
-
-        #logo{
-            color: white;
-            width: 100px;
-            margin: auto;
-            margin-top: 100px;
-            padding: 10px;
-            font-size: 70px;
-            text-align: center;
-        }
-
-        .logo{
-            font-family: Helvetica, sans-serif;
-            width: 40px;
-            font-size: 40px;
-            text-align: center;
-        }
-
-        .area-content {
-            display: none;
-            padding: 1rem;
-            background-color: #f0f0f0;
-            margin-top: 1rem;
-        }
-
         button{
             border: none;
             border-radius: 5px;
-            padding: 5px;
+            padding: 10px;
             margin: 15px auto;
-
-        }
-
-        input[type="radio"] {
+            cursor: pointer;
             display: block;
         }
 
@@ -65,157 +37,111 @@
             color: #333;
         }
 
-        .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: transparent;
-        padding: 13px 20px;
+        .logo1 {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: white;
+            text-align: center;
         }
 
-.menu-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.btn-bar {
-  width: 30px;
-  height: 4px;
-  background-color: #fff;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-.menu-btn.active .btn-bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-btn.active .btn-bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 6px);
-}
-
-.menu-btn.active .btn-bar:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -6px);
-}
-
-.menu {
-  display: none;
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.menu.active {
-  display: block;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  width: 50%;
-  background-color: transparent;
-  z-index: 1;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 10px 10px;
-}
-
-.menu li {
-  padding: 10px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-}
-
-@media (max-width: 768px) {
-  .menu-btn {
-    display: flex;
-  }
-}
-
-.header {
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent;
-  z-index: 1000;
-}
-
-.logo1 {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: white;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.quis{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-        /* @keyframes typing {
-            from {
-                width: 0;
-            }
+        a {
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            width: 150px;
+            margin: 0 auto;
+            display: block;
         }
 
-        @keyframes blinking {
-            50% {
-                border-color: transparent;
-            }
-        } */
+        .Quiz{
+            width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+        }
 
-        /* @media only screen and (max-width: 600px) {
-            main {
+        .titulo{
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+
+        .questão{
+            margin-bottom: 20px;
+            color: white;
+            font-size: 20px;
+        }
+
+        input[type="radio"] {
+            margin-bottom: 10px;
+        }
+
+        .answer{
+            color: #333;
+            display: flex;
+            background-color: white;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .titulo {
+                font-size: 32px;
+            }
+
+            .questão {
+                font-size: 16px;
+            }
+
+            .answer label {
+                font-size: 14px;
+            }
+
+            .answer{
+                flex-direction: column;
+            }
+
+            button {
                 padding: 10px;
             }
-        } */
-        
+
+        }
+
+        @media (max-width: 480px) {
+            .titulo {
+                font-size: 28px;
+            }
+
+            .questão {
+                font-size: 14px;
+            }
+
+            .answer label {
+                font-size: 12px;
+            }
+
+            button {
+                padding: 5px;
+            }
+
+        }
+            
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="navbar">
-          <div class="menu-btn">
-            <span class="btn-bar"></span>
-            <span class="btn-bar"></span>
-            <span class="btn-bar"></span>
-          </div>
-          <div class="logo1">
-            <a class="link" href="index.html">ETEC</a>
-          </div>
-          <ul class="menu">
-            <li><h4><a class="link" href="index.html">Home</a></h4></li>
-            <li><h4><a class="link" href="integrantes.html">Integrantes</a></h4></li>
-            <li><h4><a class="link" href="contato.html">Contato</a></h4></li>
-            <li><h4><a class="link" href="projeto.html">Projeto</a></h4></li>
-            <li><h4><a class="link" href="quiz.html">Quiz</a></h4></li>
-          </ul>
-        </div>
-    </header>
     <main>    
-            <div id="logo">
-                <p>Quiz</p>
-            </div>
-            <br>
-        <div class="quis">
+        <div class="titulo">
+            <a class="animate__animated animate__bounceIn" href="index.html">QUIZ</a>
+        </div>
+        <div class="Quiz">
             <div class="quiz-container">
                 <div id="questionContainer1">
-                    <p id="question1"></p> <br><br>
-                    <form id="quizForm1">
+                    <p id="question1" class="questão"></p>
+                    <form id="quizForm1" class="answer">
                     </form>
                     <button id="checkButton1">Verificar Resposta</button>
                 </div>
@@ -249,16 +175,56 @@ a {
             {
                 questions: [
                     {
-                        question: "1.Qual partícula subatômica possui uma carga negativa e orbita ao redor do núcleo do átomo?",
-                        options: ["Próton", "Nêutron", "Elétron", "Íon", "Átomo"],
-                        correctAnswer: "Elétron"
+                        question: "1. Qual é o principal objetivo de uma estação de tratamento de esgoto?",
+                        options: ["Fornecer água potável", "Tratar águas pluviais", "Tratar águas industriais", "Tratar efluentes sanitários"],
+                        correctAnswer: "Tratar efluentes sanitários"
                     },
                     {
-                        question: "2.De acordo com o modelo atômico proposto por Rutherford, qual é a característica principal do átomo?",
-                        options: ["Os elétrons estão distribuídos uniformemente em toda a massa do átomo.", "O átomo é uma esfera sólida e indivisível.", "A maioria da massa e carga positiva do átomo está concentrada no núcleo.", "Os elétrons estão dispostos em órbitas quantizadas ao redor do núcleo.", "O núcleo é formado por nêutrons e elétrons."],
-                        correctAnswer: "A maioria da massa e carga positiva do átomo está concentrada no núcleo."
+                        question: "2. O que é um reator biológico em uma estação de tratamento de esgoto?",
+                        options: ["Um tanque para armazenamento de esgoto bruto", "Um dispositivo para aquecimento do esgoto", "Um processo para remoção de nutrientes", "Um local onde ocorre a decomposição biológica de poluentes"],
+                        correctAnswer: "Um local onde ocorre a decomposição biológica de poluentes"
+                    },
+                    {
+                        question: "3. Qual é a função primordial do processo de sedimentação em uma estação de tratamento de esgoto?",
+                        options: ["Desinfecção do esgoto", "Remoção de sólidos suspensos", "Extração de metais pesados", "Neutralização do pH do esgoto"],
+                        correctAnswer: "Remoção de sólidos suspensos"
+                    },
+                    {
+                        question: "4. O que é a desinfecção em uma estação de tratamento de esgoto?",
+                        options: ["Remoção de resíduos tóxicos", "Extração de nutrientes", "Eliminação de microorganismos patogênicos", "Separação de água e óleo"],
+                        correctAnswer: "Eliminação de microorganismos patogênicos"
+                    },
+                    {
+                        question: "5. Qual é a importância da remoção de nutrientes, como nitrogênio e fósforo, em uma estação de tratamento de esgoto?",
+                        options: ["Prevenir a corrosão de tubulações", "Promover a formação de biomassa", "Evitar a formação de espuma", "Prevenir a eutrofização dos corpos d'água"],
+                        correctAnswer: "Prevenir a eutrofização dos corpos d'água"
+                    },
+                    {
+                        question: "6. Qual método é frequentemente usado para desinfecção do esgoto tratado em uma estação?",
+                        options: ["Filtração", "Oxidação", "Cloração", "Eletrocoagulação"],
+                        correctAnswer: "Cloração"
+                    },
+                    {
+                        question: "7. Como os resíduos resultantes do tratamento de esgoto são geralmente gerenciados em uma estação?",
+                        options: ["Descartados diretamente no oceano", "Enviados para aterros sanitários", "Utilizados como adubo orgânico", "Queimados para geração de energia"],
+                        correctAnswer: "Enviados para aterros sanitários"
+                    },
+                    {
+                        question: "8. Quais dos seguintes são desafios ambientais associados às estações de tratamento de esgoto?",
+                        options: ["Diminuição do consumo de água", "Aumento da biodiversidade local", "Emissão de odores desagradáveis", "Redução das chuvas ácidas"],
+                        correctAnswer: "Emissão de odores desagradáveis"
+                    },
+                    {
+                        question: "9. Como as estações de tratamento de esgoto podem ser projetadas de forma mais sustentável?",
+                        options: ["Aumentando o uso de produtos químicos no processo", "Minimizando a reciclagem de água", "Utilizando energia de fontes não renováveis", "Incorporando sistemas de reuso de água e geração de energia"],
+                        correctAnswer: "Incorporando sistemas de reuso de água e geração de energia"
+                    },
+                    {
+                        question: "10. Quais são algumas inovações recentes no tratamento de esgoto?",
+                        options: ["Uso exclusivo de métodos físicos para tratamento", "Introdução de produtos químicos nocivos para acelerar o processo", "Aplicação de tecnologias verdes e naturais, como zonas de raízes", "Eliminação completa do processo de tratamento para economizar recursos"],
+                        correctAnswer: "Aplicação de tecnologias verdes e naturais, como zonas de raízes"
                     }
-                    // Adicione mais perguntas aqui
+                    
                 ],
                 questionContainer: document.getElementById("questionContainer1"),
                 questionElement: document.getElementById("question1"),
@@ -322,14 +288,6 @@ a {
         quizzes.forEach((quiz, index) => {
             showQuestion(quiz);
             quiz.checkButton.addEventListener("click", () => checkAnswer(quiz));
-        });
-
-            const menuBtn = document.querySelector('.menu-btn');
-            const menu = document.querySelector('.menu');
-
-            menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('active');
-            menuBtn.classList.toggle('active');
         });
     </script>
 </body>
