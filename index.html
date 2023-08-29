@@ -256,7 +256,6 @@ div img{
                 <p>1.2 Grosseiro</p>
                 <p>1.3 Médio</p>
                 <p>2.Elevatoria</p>
-                <p>2.2 Tipo de bomba (Submersível ou Recalque)</p>
                 <p>3. Caixa de Areia</p>
                 <p>4. Decantador Primario</p>
                 <p>5. Decantador Secundario</p>
@@ -295,7 +294,7 @@ div img{
             <div class="hidden-content">
                 <p>Na nossa Estação de Tratamento de Efluentes (ETE), empregamos dois tipos de gradeamento: um com aberturas largas e outro com aberturas de tamanho intermediário. Ambos são essenciais para garantir que a velocidade da água se mantenha entre 0,6 metros por segundo e 1 metro por segundo.</p>
                 <img src="Gradeamento.webp" alt="">
-                <p>Fonte <a href="https://repositorio.utfpr.edu.br/jspui/bitstream/1/587/1/CT_PPGEC_M_Barros%2C%20H%C3%A9lio%20Botto%20de_2013.pdf">Sistema Auxiliar a Projetos de Estações de Tratamento de Esgotos Compactas - SAPETEC</a></p>
+                <p>Fonte <a href="https://repositorio.utfpr.edu.br/jspui/bitstream/1/587/1/CT_PPGEC_M_Barros%2C%20H%C3%A9lio%20Botto%20de_2013.pdf">utfpr</a></p>
                 <p>Utilizando a fórmula de cálculo (Q = A * V), onde Q representa a vazão, A é a área e V é a velocidade, é viável determinar que a área necessária é de 1,1575 m² (0,0926 m³/s = A * 0,8). Contudo, é essencial fazer um ajuste de 50% na grelha para permitir a passagem da água, o que significa que a área necessária se torna 0,2315 m² (0,11575 / 0,5).</p>
                 <p>Por último, é necessário realizar o ajuste da área e das barras. O espaçamento entre as barras é de 8 cm e a espessura das barras é de 8 mm. Primeiro, consideramos metade do espaçamento, que é igual a 0,04 m, e aplicamos o mesmo valor para a espessura das barras, resultando em 0,008 m. Somamos esses dois valores e elevamos ao quadrado para obter a área total, que resulta em 0,023 m² ou 23 * 10^-4 m². Em seguida, dividimos esse valor pela área pela qual a água passará. Aplicando o mesmo procedimento, encontramos um valor de 16 * 10^-4. Dividindo esses dois valores, obtemos 1,44 m.</p>
                 <p>Multiplicando a área total por 1,44 para incorporar o ajuste das barras juntamente com a passagem da água, obtemos um valor de 0,33336 m². Ao aplicar a operação de raiz, podemos determinar que as dimensões de altura e largura do gradeamento serão de 0,57737 metros, e vale ressaltar que parte do gradeamneto fica submerso no nosso projeto ele ficara a metade da altura total ou seja 0,28869 metros.<a href="https://salatecnica.com.br/cursos/Arquivos/NBRS/NBR%2012208%20-%201992%20-%20Projeto%20de%20Esta%C3%A7%C3%B5es%20Elevat%C3%B3rias%20de%20Esgoto%20Sanit%C3%A1rio.pdf">(NBR 12208)</a></p>
@@ -319,6 +318,19 @@ div img{
             </div>
             <button class="leiaMaisBtn">Leia mais</button>
         </article>
+        <article>
+            <!-- 5 -->
+            <h2>Caixa de Areia</h2>
+            <p>A caixa de areia retira partículas pesadas, como areia, do esgoto por sedimentação, prevenindo danos aos processos subsequentes de tratamento.</p>
+            <div class="hidden-content">
+                <p>Até agora nosso projeto está semelhante ao seguinte esquema:</p>
+                <img src="caixa de areia.webp" alt="">
+                <p>Fonte: <a href="https://pt.slideshare.net/mackenzista2/aula-captao-adutorasrev">mackenzista</a></p>
+                <p>A única sugestão para dimensionar uma caixa de areia é manter uma taxa de vazão entre 600 e 1300 metros cúbicos por metro quadrado por dia (m³/m².dia). Em outras palavras, um dia possui 24 horas, o que equivale a 86.400 segundos. Consequentemente, quando você divide 1300 m³/m².dia por 86.400 segundos/dia, obtém aproximadamente 0,015 metros cúbicos por metro quadrado por segundo (m³/m².s), que é equivalente a 15 litros por segundo (L/s).</p>
+                <p>Utilizaremos medidas padronizadas para efetuar as medições.</p>
+            </div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
         <!-- 4.1 -->
         <article>
             <h2>Tubulação</h2>
@@ -327,18 +339,9 @@ div img{
             <div class="hidden-content">
                 <img src="tubo.webp" alt="">
                 <p>Fonte: <a href="https://pt.slideshare.net/mackenzista2/aula-captao-adutorasrev">mackenzista</a></p>
-                <p></p>
-            </div>
-            <button class="leiaMaisBtn">Leia mais</button>
-        </article>
-        <!-- 5 -->
-        <article>
-            <h2>Caixa de Areia</h2>
-            <p>A caixa de areia retira partículas pesadas, como areia, do esgoto por sedimentação, prevenindo danos aos processos subsequentes de tratamento.</p>
-            <div class="hidden-content">
-                <p>Até agora nosso projeto está semelhante ao seguinte esquema:</p>
-                <img src="caixa de areia.webp" alt="">
-                <p>Fonte: <a href="https://pt.slideshare.net/mackenzista2/aula-captao-adutorasrev">mackenzista</a></p>
+                <p>Para uma vazão de 15 litros por segundo (L/s), será requerida uma velocidade de 6 metros por segundo (m/s). De acordo com o cálculo da vazão, a área necessária para acomodar essa vazão é de 0,008 metros quadrados (m²), equivalente a 1 centímetro quadrado (cm²).</p>
+                <p>Ao empregar a fórmula da área de um círculo, que é A = π * r² / 4, em que A denota a área e π equivale a 3,14, é possível deduzir que o diâmetro será de 13 centímetros. Isso decorre da seguinte equação: 0,01 = π * r² / 4.</p>
+                <p>É importante destacar que empregaremos um tubo com 7 metros de comprimento da classe K-7.</p>
             </div>
             <button class="leiaMaisBtn">Leia mais</button>
         </article>
@@ -347,6 +350,7 @@ div img{
             <h2>Decantador Primario</h2>
             <p>O decantador primário separa sólidos e materiais flutuantes no tratamento de esgoto por meio de sedimentação e flotação, melhorando a eficiência do processo de tratamento.</p>
             <div class="hidden-content">
+                <p>Optaremos por um decantador circular que possui dimensões convencionais, incluindo uma profundidade lateral de 3,5 metros. Esse decantador será destinado ao tratamento de um esgoto primário, variando entre 3,5 a 4,5 metros de profundidade. Além disso, o diâmetro deste decantador será de 20 metros.</p>
             </div>
             <button class="leiaMaisBtn">Leia mais</button>
         </article>
@@ -354,17 +358,67 @@ div img{
         <article>
             <h2>Decantador Secundario</h2>
             <p>O decantador secundário remove microrganismos e partículas finas do esgoto tratado, permitindo que eles sedimentem antes de o efluente ser liberado, melhorando a qualidade da água final.</p>
-            <div class="hidden-content"></div>
+            <div class="hidden-content">
+                <p>Nota: Mesma medida do dencantador primario </p>
+            </div>
             <button class="leiaMaisBtn">Leia mais</button>
         </article>
         <!-- 8 -->
         <article>
             <h2>Lodo</h2>
-            <p>Conteudo</p>
-            <div class="hidden-content"></div>
+            <p>Lodo é o resíduo orgânico resultante do processo de tratamento de esgoto em estações, consistindo em materiais decantados e concentrados que requerem manejo adequado.</p>
+            <div class="hidden-content">
+                <p>Lodo ativado convencional: 
+                    Processo básico com aeração mecanizada ou por ar difuso, com possibilidade de 
+                    nitrificação. A remoção de DBO é da ordem de 85 a 95%, com um tempo de detenção 
+                    hidráulica variando de 4 a 8 horas. A idade do lodo oscila entre 4 e 15 dias. A concepção 
+                    inclui um tanque de aeração seguido de um decantador (VON SPERLING, 2009; BARROS e 
+                    FIEDLER, 2007; JORDÃO e PESSÔA, 2005).</p>
+                    <p>fb= fb′/1+(1−fb′)×Kd×θ cfb′ <br>
+                        Nesta fórmula, "fb" representa a parte dos sólidos suspensos que é biodegradável. Geralmente, utilizamos o valor 0,80 para fb'. O coeficiente de respiração, chamado de Kd, é comumente definido como 0,08. Além disso, θc indica a detenção hidráulica, ou seja, o período de tempo que o lodo é recirculado. No caso mencionado, θc é fixado em 8 horas.
+ <br>Essa equação é empregada para calcular a porção de sólidos suspensos que é suscetível à degradação biológica, levando em consideração os valores pré-determinados para fb', Kd e θc.
+                        </p>
+                        <p>Como resultado a fração biodegrável dos sólidos suspensos (fb) é ≈ 0,7092 ou 70,92%, para calcular a quantidade de lodo ultilizado vai ser necessario usar a formula IPL = Quantidade de Lodo Gerada (Kg) / Volume de Esgoto Bruto Tratado (m³) sendo IPL "Índice de Produção de Lodo" para calcular o Volume do Esgoto utilizamos a formula Volume de Esgot Bruto = População atendidda * Vazão Média Per Capita, se baseando em Vazão média per capita típica: 200 a 250 litros por pessoa por dia. podemos dizer que: <br> Vazão mínima = 50 mil pessoas * 0,2 m³/pessoa/dia = 10,000 m³/dia <br>  Vazão Máxima = 50 mil pessoas * 0,25 m³/pessoa/dia = 12,000 m³/dia</p>
+                        <p>Lodo necessario = IPL / Volume de Esgoto Bruto m³/dia * Fração Biodegradável (fb) * 1000<br>
+                        IPL = 1.000 gramas <br>
+                        Fração Biodegradável = 0,7092 <br>
+                        Volume de Esgoto Bruto = 12.000 m³/dia <br>
+                        Lodo necessario = 117,5 gramas de Lodo por dia 
+                        </p>
+                        
+                        <a href="https://www.mpf.mp.br/atuacao-tematica/ccr4/documentos-e-publicacoes/outros-sites/122092011Elaboraodeprojetoshidrulicossanitriosdeestaesdetratamentodeesgotossanitrios.pdf">ABNT NBR 12209 (1992)</a>
+            </div>
             <button class="leiaMaisBtn">Leia mais</button>
         </article>
 
+        <article>
+            <h2>Prensa Hidráulica</h2>
+            <p>
+                Uma prensa hidráulica em uma estação de tratamento de esgoto é usada para desidratar o lodo, reduzindo seu teor de umidade e volume antes do descarte ou disposição final.</p>
+            <div class="hidden-content">
+                <p>Capacidade de Pressão: 5 toneladas. <br>
+                    Curso do Cilindro: 300 mm.<br>
+                    Área da Mesa: 600 mm x 600 mm.<br>
+                    Altura Fechada: 800 mm.<br>
+                    Altura Aberta: 1100 mm.<br>
+                    Velocidade de Avanço: 10 mm/s. <br>
+                    Velocidade de Retorno: 20 mm/s. <br>
+                    Potência do Motor Hidráulico: 7,5 kW.<br>
+                    Tamanho do Reservatório de Óleo: 150 litros.<br>
+                    Peso da Prensa: 1200 kg.</p>
+            </div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
+        
+        <article>
+            <h2>Descarte ou Reúso:</h2>
+            <p>Encaminhe o efluente tratado para a próxima etapa de tratamento ou para descarte seguro ou reuso, conforme regulamentações locais.</p>
+            <div class="hidden-content">
+                <p>Após passar por todas as etapas de tratamento, o efluente tratado é geralmente descarregado em corpos d'água de acordo com regulamentações ambientais. Em algumas situações, o efluente tratado também pode ser reutilizado para fins não potáveis, como irrigação.</p>
+            </div>
+            <button class="leiaMaisBtn">Leia mais</button>
+        </article>
+        
     </main>
     <footer>
         <p>&copy; 2023 ETE. Todos os direitos reservados.</p>
